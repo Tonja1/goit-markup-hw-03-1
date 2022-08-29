@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   /* Fonts */
 
@@ -8,7 +18,8 @@
 
   /* Background colors */
   --main-cl: #f5f5f5;
-  --bacgr-filtr: #f5f4fa;
+  --backgr-filtr: #f5f4fa;
+  --backgr-col: #2f303a;
 
   /* Other */
   --accent-cl: #2196f3;
@@ -17,6 +28,15 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-cl);
+  margin: 0;
+}
+
+.container {
+  outline: 2px solid #2196f3;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .logo {
   font-family: Raleway;
@@ -37,8 +57,6 @@ body {
 }
 
 .nav-link {
-  font-style: normal;
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -68,7 +86,7 @@ body {
 
 /* Секція HERO */
 .section-hero {
-  background: #2f303a;
+  background: var(--backgr-col);
 }
 
 .slogan {
@@ -81,21 +99,19 @@ body {
 }
 
 .btn {
+  background: var(--accent-cl);
   width: 216px;
   height: 50px;
   left: 692px;
   top: 430px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 32px 10px;
 }
 
 .btn-text {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -104,17 +120,14 @@ body {
 
 /* Наші переваги */
 .list-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
+  color: var(--subtitle-col);
 }
 
 .list-text {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -123,7 +136,6 @@ body {
 }
 
 .subtitle {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -134,7 +146,6 @@ body {
 
 /* Наша команда */
 .team-person {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -144,7 +155,6 @@ body {
 }
 
 .team-position {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -155,7 +165,7 @@ body {
 
 /* Підвал */
 .footer {
-  background: #2f303a;
+  background: var(--backgr-col);
 }
 
 .footer-logocolor {
@@ -165,12 +175,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-cl);
 }
 
 .footer-logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -200,35 +209,29 @@ body {
 }
 
 .list {
-list-style: none;
+  list-style: none;
 }
 
 .link {
   text-decoration: none;
 }
 
-.filtr:hover,
-.filtr:focus {
-  color: var(--accent-cl);
+.filtr:hover {
+  color: var(--txt-but);
+  background-color: var(--accent-cl);
 }
 
 .filtr {
-  width: 130px;
-  height: 38px;
-  background: var(--bacgr-filtr);
-}
-
-.filtr-text {
-  font-weight: 500;
+  font-family: inherit;
+  background: var(--backgr-filtr);
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--subtitle-col);
+  cursor: pointer;
 }
+
 .photo-subtitle {
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -236,8 +239,6 @@ list-style: none;
 }
 
 .photo-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
