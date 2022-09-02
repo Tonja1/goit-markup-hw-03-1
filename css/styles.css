@@ -31,17 +31,43 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .container {
   outline: 2px solid #2196f3;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
 }
 
 .container-nav {
   display: flex;
   align-items: center;
+  gap: 50px;
+}
+
+.logo-link {
+  margin-right: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .logo {
   font-family: Raleway;
@@ -71,8 +97,6 @@ body {
 
 .nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--subtitle-col);
   font-weight: 500;
@@ -95,6 +119,8 @@ body {
 
 .contacts-list {
   display: flex;
+  margin-left: auto;
+  margin-right: 215px;
 }
 
 .contacts-list .list-item + .list-item {
@@ -111,17 +137,16 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Секція HERO */
 .section-hero {
   background: var(--backgr-col);
   text-align: center;
-  margin-bottom: 94px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .slogan {
@@ -132,6 +157,9 @@ body {
   text-transform: uppercase;
   color: var(--txt-but);
   margin-bottom: 30px;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -155,6 +183,10 @@ body {
 }
 
 /* Наші переваги */
+.pref {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list-title {
   text-transform: uppercase;
   font-size: 14px;
@@ -172,6 +204,10 @@ body {
   margin: 0;
 }
 
+.work {
+  padding-bottom: 94px;
+}
+
 .subtitle {
   font-size: 36px;
   line-height: 1.16;
@@ -181,7 +217,15 @@ body {
   margin-bottom: 50px;
 }
 
+.work-cards {
+  margin-top: 50px;
+  align-items: center;
+}
+
 /* Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
 .team-person {
   font-weight: 500;
   font-size: 16px;
@@ -253,6 +297,11 @@ body {
   text-decoration: none;
 }
 
+.port-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
 .filtr:hover,
 .filtr:focus {
   color: var(--txt-but);
@@ -268,6 +317,12 @@ body {
   color: var(--subtitle-col);
   cursor: pointer;
   border-color: transparent;
+}
+
+.photo-list {
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 5px;
 }
 
 .photo-subtitle {
