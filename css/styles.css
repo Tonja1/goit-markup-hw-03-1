@@ -46,12 +46,15 @@ p {
 }
 
 .container {
-  outline: 2px solid #2196f3;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -89,6 +92,17 @@ p {
 
 .list {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-nav {
+  list-style: none;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 50px;
 }
 
 .list .list-item + .list-item {
@@ -120,7 +134,8 @@ p {
 .contacts-list {
   display: flex;
   margin-left: auto;
-  margin-right: 215px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-list .list-item + .list-item {
@@ -150,7 +165,6 @@ p {
 }
 
 .slogan {
-  outline: 2px solid tomato;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -205,6 +219,7 @@ p {
 }
 
 .work {
+  padding-top: 0;
   padding-bottom: 94px;
 }
 
@@ -220,11 +235,19 @@ p {
 .work-cards {
   margin-top: 50px;
   align-items: center;
+  gap: 30px;
 }
 
 /* Наша команда */
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  margin-top: 50px;
+  gap: 30px;
 }
 .team-person {
   font-weight: 500;
@@ -247,6 +270,8 @@ p {
 /* Підвал */
 .footer {
   background: var(--backgr-col);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logocolor {
@@ -289,18 +314,15 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
 .port-list {
   display: flex;
   gap: 8px;
   justify-content: center;
+}
+
+.section-filtr {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .filtr:hover,
 .filtr:focus {
@@ -319,10 +341,16 @@ p {
   border-color: transparent;
 }
 
+.filtr-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
 .photo-list {
   flex-wrap: wrap;
   margin-top: 50px;
-  gap: 5px;
+  gap: 30px;
 }
 
 .photo-subtitle {
