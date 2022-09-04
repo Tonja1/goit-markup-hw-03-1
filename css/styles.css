@@ -5,7 +5,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  
 }
 
 :root {
@@ -33,6 +33,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -43,6 +45,26 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .container {
@@ -59,19 +81,17 @@ p {
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .container-nav {
   display: flex;
   align-items: center;
-  gap: 50px;
-}
+  }
 
 .logo-link {
   margin-right: 93px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+  }
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -152,8 +172,8 @@ p {
 }
 
 .section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Секція HERO */
@@ -197,10 +217,7 @@ p {
 }
 
 /* Наші переваги */
-.pref {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .list-title {
   text-transform: uppercase;
   font-size: 14px;
@@ -216,11 +233,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--txt-col);
   margin: 0;
-}
-
-.work {
-  padding-top: 0;
-  padding-bottom: 94px;
+  padding-right: 30px;
 }
 
 .subtitle {
@@ -233,7 +246,6 @@ p {
 }
 
 .work-cards {
-  margin-top: 50px;
   align-items: center;
   gap: 30px;
 }
@@ -241,12 +253,9 @@ p {
 /* Наша команда */
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  }
 
 .team-list {
-  margin-top: 50px;
   gap: 30px;
 }
 .team-person {
@@ -255,6 +264,7 @@ p {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   color: var(--subtitle-col);
 }
 
@@ -265,6 +275,10 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--txt-col);
+}
+
+.photo-wrapp {
+padding: 30px;
 }
 
 /* Підвал */
@@ -291,6 +305,19 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--txt-but);
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.footer-item {
+  margin-bottom: 10px;
+}
+
+.address-list {
+  list-style: none;
+  text-decoration: none;
 }
 
 .address-link {
@@ -320,10 +347,6 @@ p {
   justify-content: center;
 }
 
-.section-filtr {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .filtr:hover,
 .filtr:focus {
   color: var(--txt-but);
@@ -364,5 +387,10 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-top: 4px;
   color: var(--txt-col);
+}
+
+.photo-items {
+  padding: 20px 24px;
 }
