@@ -5,7 +5,6 @@ html {
 *,
 *::before,
 *::after {
-  
 }
 
 :root {
@@ -64,7 +63,6 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
 }
 
 .container {
@@ -87,11 +85,11 @@ p {
 .container-nav {
   display: flex;
   align-items: center;
-  }
+}
 
 .logo-link {
   margin-right: 93px;
-  }
+}
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -218,6 +216,19 @@ p {
 
 /* Наші переваги */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list-title {
   text-transform: uppercase;
   font-size: 14px;
@@ -253,7 +264,7 @@ p {
 /* Наша команда */
 .team {
   background-color: #f5f4fa;
-  }
+}
 
 .team-list {
   gap: 30px;
@@ -278,7 +289,7 @@ p {
 }
 
 .photo-wrapp {
-padding: 30px;
+  padding: 30px;
 }
 
 /* Підвал */
@@ -392,5 +403,7 @@ padding: 30px;
 }
 
 .photo-items {
+  border-top: none;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
