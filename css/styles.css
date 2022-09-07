@@ -36,6 +36,12 @@ img {
   height: auto;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -57,12 +63,6 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .container {
@@ -112,11 +112,9 @@ p {
   display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .list-nav {
-  list-style: none;
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -244,7 +242,14 @@ p {
   letter-spacing: 0.03em;
   color: var(--txt-col);
   margin: 0;
-  padding-right: 30px;
+}
+
+.pref-text {
+  flex-basis: calc((100%-30px * 3) / 4);
+}
+
+.work {
+  padding-top: 0;
 }
 
 .subtitle {
@@ -289,7 +294,7 @@ p {
 }
 
 .photo-wrapp {
-  padding: 30px;
+  padding: 30px 0;
 }
 
 /* Підвал */
@@ -324,6 +329,10 @@ p {
 
 .footer-item {
   margin-bottom: 10px;
+}
+
+.footer-item :last-child {
+  margin-bottom: 0;
 }
 
 .address-list {
