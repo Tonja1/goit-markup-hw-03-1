@@ -244,8 +244,8 @@ p {
   margin: 0;
 }
 
-.pref-text {
-  flex-basis: calc((100%-30px * 3) / 4);
+.pref-text:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work {
@@ -327,12 +327,8 @@ p {
   margin-top: 20px;
 }
 
-.footer-item {
-  margin-bottom: 10px;
-}
-
-.footer-item :last-child {
-  margin-bottom: 0;
+.footer-item :not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-list {
